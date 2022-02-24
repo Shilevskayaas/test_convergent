@@ -96,7 +96,7 @@
 }
 .columns__info{
    display: flex;
-   height: 500px;
+   min-height: 500px;
 }
 .columns__block{
    display: flex;
@@ -115,6 +115,7 @@
 }
 .columns__subtitle{
    text-transform: uppercase;
+   white-space: nowrap;
    font-weight: bold;
    font-size: 72px;
    text-shadow: -10px -8px #FFD966;
@@ -137,4 +138,21 @@ p{
 a{
    font-size: 18px;
    color: #6ACCB2;
+}
+
+
+@media (max-width: 320px) {
+   .columns__info{
+      flex-direction: column;
+   }
+   .columns__title img{
+      height: 70px;
+      width: 70px;
+   }
+   .columns__subtitle{
+      font-size: 52px;
+   }
+   .columns__block{
+      padding: 10px;
+   }
 }
