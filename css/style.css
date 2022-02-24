@@ -141,7 +141,7 @@ a{
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 540px) {
    .columns__info{
       flex-direction: column;
    }
@@ -153,6 +153,16 @@ a{
       font-size: 52px;
    }
    .columns__block{
-      padding: 10px;
+      padding: 20px 10px 40px 10px;
+   }
+   .columns__block_2, .columns__block_4{
+      align-self: flex-start
+   }
+   p{
+      padding: 0;
+   }
+   a{
+      display: block;
+      padding: 10px 0px 0px 0px;
    }
 }
