@@ -1,32 +1,32 @@
 /*Обнуляющие стили*/
-* {
+*{
    padding: 0;
    margin: 0;
    border: 0;
- }
+}
  *,
  *:before,
- *:after {
+ *:after{
    -moz-box-sizing: border-box;
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
- }
- :focus,
- :active {
+}
+:focus,
+:active{
    outline: none;
- }
- a:focus,
- a:active {
+}
+a:focus,
+a:active{
    outline: none;
- }
- nav,
- footer,
- header,
- aside {
+}
+nav,
+footer,
+header,
+aside{
    display: block;
- }
- html,
- body {
+}
+html,
+body{
    height: 100%;
    width: 100%;
    font-size: 100%;
@@ -35,59 +35,60 @@
    -ms-text-size-adjust: 100%;
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
- }
- input,
- button,
- textarea {
+}
+input,
+button,
+textarea{
    font-family: inherit;
- }
- input::-ms-clear {
+}
+input::-ms-clear{
    display: none;
- }
- button {
+}
+button{
    cursor: pointer;
- }
- button::-moz-focus-inner {
+}
+button::-moz-focus-inner{
    padding: 0;
    border: 0;
- }
- a,
- a:visited {
+}
+a,
+a:visited{
    text-decoration: none;
- }
- a:hover {
+}
+a:hover{
    text-decoration: none;
- }
- ul li {
+}
+ul li{
    list-style: none;
- }
- img {
+}
+img{
    vertical-align: top;
- }
- h1,
- h2,
- h3,
- h4,
- h5,
- h6 {
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
    font-size: inherit;
    font-weight: inherit;
- }
- /*--------------------*/
- body{
+}
+/*--------------------*/
+
+body{
    font-family: 'Montserrat', sans-serif;
- }
- .wrapper {
+}
+.wrapper {
    min-height: 100%;
    overflow: hidden;
    display: flex;
    flex-direction: column;
    padding: 100px 0px 100px 0px;
- }
- .columns__container {
+}
+.columns__container {
    margin: 0px auto;
    max-width: 1400px;
- }
+}
 .columns__row{
    display: flex;
    flex-direction: column;
@@ -98,16 +99,16 @@
 .columns__info{
    display: flex;
    min-height: 500px;
-   justify-content: space-between;
+   justify-content: space-around;
    margin: -50px 0px 0px 0px;
 }
 .columns__block{
    display: flex;
    flex: 0 1 45%;
+   justify-content: center;
 }
 .columns__block_2, .columns__block_4{
    align-self: flex-end;
-   justify-content: flex-end;
 }
 .columns__title{
    margin: 0px 20px 0px 0px;
@@ -121,9 +122,29 @@
    white-space: nowrap;
    font-weight: bold;
    font-size: 72px;
-   text-shadow: -10px -8px #FFD966;
-   color: transparent;
-   -webkit-text-stroke: 2px #676767;
+   color: #FFFFFF;
+	text-shadow: 
+      -0   -1px 0   #676767,
+         0   -1px 0   #676767,
+      -0    1px 0   #676767,
+         0    1px 0   #676767,
+      -1px -0   0   #676767,
+         1px -0   0   #676767,
+      -1px  0   0   #676767,
+         1px  0   0   #676767,
+      -1px -1px 0   #676767,
+         1px -1px 0   #676767,
+      -1px  1px 0   #676767,
+         1px  1px 0   #676767,
+      -1px -1px 0   #676767,
+         1px -1px 0   #676767,
+      -1px  1px 0   #676767,
+      1px  1px 0   #676767,
+      -8px -8px #FFD966;
+}
+.columns__subtitle::after{
+   color: #FFD966;
+   text-shadow: -8px -8px #FFD966;
 }
 .columns__text{
    max-width: 360px;
@@ -142,6 +163,10 @@ a{
    font-size: 18px;
    color: #6ACCB2;
    padding: 20px 0px 0px 0px;
+   text-decoration: underline;
+}
+a:hover{
+   text-decoration: none;
 }
 
 @media (max-width: 780px) {
@@ -172,6 +197,7 @@ a{
       padding: 10px 0px 0px 0px;
    }
 }
+
 @media (max-width: 540px) {
    .wrapper{
       padding: 50px 0px 50px 0px;
@@ -181,6 +207,7 @@ a{
       margin: 0;
    }
    .columns__block{
+      justify-content: flex-start;
       padding: 20px 10px 40px 10px;
    }
    .columns__block_2, .columns__block_4{
