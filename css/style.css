@@ -120,7 +120,7 @@ body{
 .columns__subtitle{
    text-transform: uppercase;
    white-space: nowrap;
-   font-weight: bold;
+   font-weight: 700;
    font-size: 72px;
    color: #FFFFFF;
 	text-shadow: 
